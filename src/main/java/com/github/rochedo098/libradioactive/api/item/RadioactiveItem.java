@@ -1,6 +1,6 @@
-package com.github.rochedo.libradioactive.api.item;
+package com.github.rochedo098.libradioactive.api.item;
 
-import com.github.rochedo.libradioactive.LibRadioactive;
+import com.github.rochedo098.libradioactive.LibRadioactive;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

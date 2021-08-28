@@ -1,9 +1,8 @@
-package com.github.rochedo.libradioactive.mixins.common;
+package com.github.rochedo098.libradioactive.mixins.common;
 
-import com.github.rochedo.libradioactive.LibRadioactive;
+import com.github.rochedo098.libradioactive.LibRadioactive;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;

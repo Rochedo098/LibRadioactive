@@ -1,6 +1,5 @@
-package com.github.rochedo.libradioactive.impl;
+package com.github.rochedo098.libradioactive.impl;
 
-import com.github.rochedo.libradioactive.mixins.common.MixinLivingEntity;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

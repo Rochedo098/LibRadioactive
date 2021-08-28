@@ -1,4 +1,4 @@
-package com.github.rochedo.libradioactive.api;
+package com.github.rochedo098.libradioactive.api;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.ChunkPos;

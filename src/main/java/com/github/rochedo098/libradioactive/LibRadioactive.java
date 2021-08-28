@@ -1,8 +1,8 @@
-package com.github.rochedo.libradioactive;
+package com.github.rochedo098.libradioactive;
 
-import com.github.rochedo.libradioactive.api.RadiationType;
-import com.github.rochedo.libradioactive.api.SimpleRadiationType;
-import com.github.rochedo.libradioactive.impl.RadioactiveMeter;
+import com.github.rochedo098.libradioactive.api.RadiationType;
+import com.github.rochedo098.libradioactive.api.SimpleRadiationType;
+import com.github.rochedo098.libradioactive.impl.RadioactiveMeter;
 import com.mojang.serialization.Lifecycle;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.damage.DamageSource;

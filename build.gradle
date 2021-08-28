@@ -48,7 +48,6 @@ jar {
 	}
 }
 
-/*
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
@@ -65,4 +64,3 @@ publishing {
 
 	}
 }
-*/

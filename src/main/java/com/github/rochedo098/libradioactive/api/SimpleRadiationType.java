@@ -1,6 +1,6 @@
-package com.github.rochedo.libradioactive.api;
+package com.github.rochedo098.libradioactive.api;
 
-import com.github.rochedo.libradioactive.LibRadioactive;
+import com.github.rochedo098.libradioactive.LibRadioactive;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.World;

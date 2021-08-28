@@ -1,4 +1,4 @@
-package com.github.rochedo.libradioactive;
+package com.github.rochedo098.libradioactive;
 
 import net.minecraft.entity.damage.DamageSource;
 

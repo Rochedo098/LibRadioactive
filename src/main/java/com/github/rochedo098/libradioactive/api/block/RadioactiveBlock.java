@@ -1,6 +1,6 @@
-package com.github.rochedo.libradioactive.api.block;
+package com.github.rochedo098.libradioactive.api.block;
 
-import com.github.rochedo.libradioactive.api.item.RadioactiveItem;
+import com.github.rochedo098.libradioactive.api.item.RadioactiveItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

@@ -1,6 +1,6 @@
-package com.github.rochedo.libradioactive.api;
+package com.github.rochedo098.libradioactive.api;
 
-import com.github.rochedo.libradioactive.LibRadioactive;
+import com.github.rochedo098.libradioactive.LibRadioactive;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.nbt.NbtCompound;
