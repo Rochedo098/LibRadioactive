@@ -7,13 +7,11 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.Identifier;
 
 public class RadiationArea {
-    private final Object2IntMap<RadiationType> radioactives = new Object2IntOpenHashMap<>();
+    private static final Object2IntMap<RadiationType> radioactives = new Object2IntOpenHashMap<>();
 
-    public RadiationArea() {
+    public RadiationArea() { }
 
-    }
-
-    public void radiate(RadiationType type, int amount) {
+    public static void radiate(RadiationType type, int amount) {
         if (!radioactives.containsKey(type)) radioactives.put(type, amount);
         else {
             int existing = radioactives.getInt(type);
@@ -21,11 +19,11 @@ public class RadiationArea {
         }
     }
 
-    public int getRadiation(RadiationType type) {
+    public static int getRadiation(RadiationType type) {
         return radioactives.getOrDefault(type, 0);
     }
 
-    public NbtCompound toTag() {
+    public static NbtCompound toTag() {
         NbtCompound tag = new NbtCompound();
         for (RadiationType type : radioactives.keySet()) {
             String key = LibRadioactive.registry.getId(type).toString();
@@ -34,7 +32,7 @@ public class RadiationArea {
         return tag;
     }
 
-    public void fromTag(NbtCompound tag) {
+    public static void fromTag(NbtCompound tag) {
         radioactives.clear();
         for (String key : tag.getKeys()) {
             RadiationType type = LibRadioactive.registry.get(new Identifier(key));

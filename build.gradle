@@ -15,14 +15,14 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.jetbrains:annotations:20.1.0'
-
 	// Minecraft and Mappings
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 
 	// Fabric Loader
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	modImplementation "net.fabricmc.fabric-api:fabric-registry-sync-v0:0.7.9+f08a69e132"
 }
 
 processResources {
@@ -61,6 +61,6 @@ publishing {
 	}
 
 	repositories {
-
+		mavenLocal()
 	}
 }

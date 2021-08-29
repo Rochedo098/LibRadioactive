@@ -8,7 +8,7 @@ import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.PersistentState;
 
 public class RadiationState extends PersistentState {
-    private Long2ObjectMap<RadiationArea> chunkMap = new Long2ObjectOpenHashMap<>();
+    private final Long2ObjectMap<RadiationArea> chunkMap = new Long2ObjectOpenHashMap<>();
 
     public RadiationState() {
         super();
@@ -19,7 +19,7 @@ public class RadiationState extends PersistentState {
         for (String key : tag.getKeys()) {
             long chunk = Long.parseLong(key);
             RadiationArea area = new RadiationArea();
-            area.fromTag(tag.getCompound(key));
+            RadiationArea.fromTag(tag.getCompound(key));
             chunkMap.put(chunk, area);
         }
     }
@@ -28,7 +28,7 @@ public class RadiationState extends PersistentState {
     public NbtCompound writeNbt(NbtCompound tag) {
         for (long key : chunkMap.keySet()) {
             RadiationArea area = chunkMap.get(key);
-            tag.put(Long.toString(key), area.toTag());
+            tag.put(Long.toString(key), RadiationArea.toTag());
         }
         return tag;
     }
@@ -42,8 +42,8 @@ public class RadiationState extends PersistentState {
         return chunkMap.get(key);
     }
 
-    public void setRadiation(ChunkPos pos, RadiationArea pollution) {
-        chunkMap.put(pos.toLong(), pollution);
+    public void setRadiation(ChunkPos pos, RadiationArea radiation) {
+        chunkMap.put(pos.toLong(), radiation);
         markDirty();
     }
 }

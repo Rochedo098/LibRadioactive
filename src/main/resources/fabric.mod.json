@@ -9,7 +9,7 @@
     "Rochedo098"
   ],
   "contact": {
-    "homepage": "",
+    "homepage": "https://rochedo098.github.io/index.html",
     "sources": "https://github.com/Rochedo098/LibRadioactive"
   },
 
@@ -19,12 +19,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.rochedo.libradioactive.LibRadioactive"
+      "com.github.rochedo098.libradioactive.LibRadioactive"
     ]
   },
 
   "mixins": [
-    "libpollution.mixins.json"
+    "libradioactive.mixins.json"
   ],
 
   "depends": {
