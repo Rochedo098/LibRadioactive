@@ -4,6 +4,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.World;
 
+/**
+ *  Extends this class to create a RadiationType;
+ *
+ *  spreadRate is the speed at which the radiation spreads;
+ *
+ *  The affectedEntity method you write what will happen to the affected entity;
+ *  and
+ *  The affectedWorld method you write what will happen to the affected world;
+ */
 public abstract class RadiationType {
     protected int spreadRate;
 

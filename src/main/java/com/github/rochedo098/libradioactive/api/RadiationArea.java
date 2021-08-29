@@ -6,6 +6,13 @@ import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.Identifier;
 
+/**
+ *  The class for RadiationArea;
+ *
+ *  The radiate method you create a radiation area for Radioactives parameter;
+ *  and
+ *  The getRadiation @return the quantity of radiation in Radioactives parameter;
+ */
 public class RadiationArea {
     private static final Object2IntMap<RadiationType> radioactives = new Object2IntOpenHashMap<>();
 

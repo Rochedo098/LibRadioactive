@@ -30,6 +30,6 @@ public class LibRadioactive implements ModInitializer {
     @Override
     public void onInitialize() {
         Registry.register(Registry.ITEM, "radioactive_meter", RADIOACTIVE_METER);
-        Registry.register(registry, new Identifier("libradioactive", "simpleradiation"), new SimpleRadiationType(1f));
+        Registry.register(registry, new Identifier("libradioactive", "simpleradiation"), new SimpleRadiationType(1f, 3));
     }
 }
