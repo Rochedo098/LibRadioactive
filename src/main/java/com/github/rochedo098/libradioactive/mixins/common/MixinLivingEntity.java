@@ -1,9 +1,12 @@
 package com.github.rochedo098.libradioactive.mixins.common;
 
 import com.github.rochedo098.libradioactive.LibRadioactive;
+import com.github.rochedo098.libradioactive.api.RadiationArea;
+import com.github.rochedo098.libradioactive.impl.RadiationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -33,8 +36,8 @@ public abstract class MixinLivingEntity extends LivingEntity {
 
     @Inject(method = "tick", at = @At("HEAD"))
     public void tick() {
-        if (!RADIOACTIVITY_IMMUNE || RADIOACTIVITY_LEVEL < 25) {
-            this.damage(LibRadioactive.RADIOACTIVE_DAMAGE_SOURCE, 1f);
-        }
+        ChunkPos chunk = this.getChunkPos();
+        RadiationArea radiation = new RadiationState().getRadiation(chunk);
+
     }
 }

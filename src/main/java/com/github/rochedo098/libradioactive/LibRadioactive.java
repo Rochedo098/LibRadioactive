@@ -2,19 +2,20 @@ package com.github.rochedo098.libradioactive;
 
 import com.github.rochedo098.libradioactive.api.RadiationType;
 import com.github.rochedo098.libradioactive.api.SimpleRadiationType;
+import com.github.rochedo098.libradioactive.impl.RadiationState;
 import com.github.rochedo098.libradioactive.impl.RadioactiveMeter;
-import com.mojang.serialization.Lifecycle;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryAttribute;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.MutableRegistry;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.util.registry.SimpleRegistry;
+import net.minecraft.world.PersistentState;
 
 public class LibRadioactive implements ModInitializer {
     // DamageSource

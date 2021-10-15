@@ -37,6 +37,8 @@ public class RadiationState extends PersistentState {
         return tag;
     }
 
+
+
     public RadiationArea getRadiation(ChunkPos pos) {
         long key = pos.toLong();
         if (!chunkMap.containsKey(key)) {
