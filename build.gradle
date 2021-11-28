@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.9-SNAPSHOT'
+	id 'fabric-loom' version '0.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -22,7 +22,7 @@ dependencies {
 	// Fabric Loader
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	modImplementation "net.fabricmc.fabric-api:fabric-registry-sync-v0:0.7.9+f08a69e132"
+	modImplementation include("net.fabricmc.fabric-api:fabric-registry-sync-v0:0.7.9+f08a69e132")
 }
 
 processResources {
@@ -48,6 +48,7 @@ jar {
 	}
 }
 
+/*
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
@@ -64,3 +65,4 @@ publishing {
 		mavenLocal()
 	}
 }
+*/

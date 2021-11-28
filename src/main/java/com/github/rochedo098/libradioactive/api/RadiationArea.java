@@ -33,7 +33,7 @@ public class RadiationArea {
     public static NbtCompound toTag() {
         NbtCompound tag = new NbtCompound();
         for (RadiationType type : radioactives.keySet()) {
-            String key = LibRadioactive.registry.getId(type).toString();
+            String key = LibRadioactive.radiationRegistry.getId(type).toString();
             tag.putInt(key, radioactives.getInt(type));
         }
         return tag;
@@ -42,7 +42,7 @@ public class RadiationArea {
     public static void fromTag(NbtCompound tag) {
         radioactives.clear();
         for (String key : tag.getKeys()) {
-            RadiationType type = LibRadioactive.registry.get(new Identifier(key));
+            RadiationType type = LibRadioactive.radiationRegistry.get(new Identifier(key));
             int value = tag.getInt(key);
             radioactives.put(type, value);
         }

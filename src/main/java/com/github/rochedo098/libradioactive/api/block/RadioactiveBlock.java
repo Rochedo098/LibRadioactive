@@ -28,7 +28,7 @@ public class RadioactiveBlock extends Block {
 
     @Override
     public Item asItem() {
-        return new RadioactiveItem(itemSettings, damageItem);
+        return new RadioactiveItem(itemSettings, damageItem, spreadRadiationRate);
     }
 
     @Override

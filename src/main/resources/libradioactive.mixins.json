@@ -4,7 +4,8 @@
   "package": "com.github.rochedo098.libradioactive.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "common.MixinLivingEntity"
+    "common.MixinLivingEntity",
+    "common.MixinAbstractFurnaceBlockEntity"
   ],
   "injectors": {
     "defaultRequire": 1
